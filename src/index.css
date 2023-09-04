@@ -302,12 +302,23 @@ Modal CSS
   background: rgba(0, 0, 0, 0.5);
   display: grid;
   place-items: center;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+  transition-property: opacity;
+  transition-duration: 2s;
 }
 .modal-container {
   background-color: var(--white);
   width: 90vw;
   height: 30vh;
   border-radius: var(--borderRadius);
+  max-width: var(--fixed-width);
   text-align: center;
   display: grid;
   place-items: center;
@@ -315,7 +326,7 @@ Modal CSS
 }
 
 .close-modal-btn {
-  position: absolue;
+  position: absolute;
   top: 1rem;
   right: 1rem;
   font-size: 2rem;

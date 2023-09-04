@@ -24,6 +24,7 @@ export const AppProvider = ({ children }) => {
         isSidebarOpen,
         isModalOpen,
         openSidebar,
+        openModal,
         closeModal,
         closeSidebar,
       }}>
