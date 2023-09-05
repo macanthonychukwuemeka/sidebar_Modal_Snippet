@@ -18,6 +18,7 @@ export const AppProvider = ({ children }) => {
   const closeModal = () => {
     setIsModalOpen(false)
   }
+
   return (
     <AppContext.Provider
       value={{
