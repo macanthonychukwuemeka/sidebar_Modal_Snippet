@@ -263,6 +263,7 @@ main {
   justify-content: center;
   align-items: center;
   background: var(--grey-100);
+  border: solid red;
 }
 .sidebar-toggle {
   position: fixed;

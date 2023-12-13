@@ -7,6 +7,7 @@ const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
   return (
     <aside className={isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}>
+      {/* the default state of isSidebarOpen is false, therefore sidebar is closed, at same time it acts as a toggle */}
       <div className="sidebar-header">
         <img src={logo} alt="sidebar" className="logo" />
         <button className="close-btn" onClick={closeSidebar}>
